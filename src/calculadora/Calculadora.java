@@ -1,15 +1,22 @@
 package calculadora;
 
+import java.util.Scanner;
+
 public class Calculadora {
+	public static void main(String[] args) {
+		System.out.println("Ingrese un número entero cualquiera");
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		float quinta;
+		float septima;
+		int resto;
 
-	private int num1;
-	private int num2;
-
-	public int sumar(int n1, int n2) {
-		num1 = n1;
-		num2 = n2;
-		return n1 + n2;
+		quinta = n / 5;
+		System.out.println("La quinta parte de dicho número es: " + quinta);
+		septima = n / 7;
+		System.out.println("La séptima parte de dicho número es: " + septima);
+		resto = n % 5;
+		System.out.println("El resto de la quinta parte de dicho núemro es:  " + resto);
 
 	}
-
 }

@@ -1,8 +1,5 @@
 package incio;
 
-import calculadora.Bicicleta;
-import calculadora.Calculadora;
-
 /**
  * JAVADOC: es una forma standar de escribir documentacion para clase o metodo
  * 
@@ -23,12 +20,13 @@ public class AppInicio {
 	 */
 	public static void main(String[] args) { // firma del método
 
-		Calculadora cal = new Calculadora();
-		int resultado;
-		resultado = cal.sumar(2, 3);
+		// Calculadora cal = new Calculadora();
+		// int resultado;
+		// resultado = cal.sumar(2, 3);
 
 		Bicicleta bici = new Bicicleta();
-		bici.acelerar(10);
+		// bici.acelerar(10);
+		System.out.println("La velocidad acutal es: " + bici.getVelocidad());
 	}
 
 }
